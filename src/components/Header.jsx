@@ -12,6 +12,7 @@ const Header = () => {
           <img src={brainwave} alt="brainwave" width={190} height={40} />
         </a>
 
+
         <nav className="hidden fixed top-[5rem] right-0 left-0 bottom-0 bg-n-8 lg:static lg:mx-auto lg:flex lg:bg-transparent">
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
