@@ -1,4 +1,5 @@
 import { smallSphere, stars } from "../assets";
+import Heading from "./Heading";
 import Section from "./Section";
 
 const Pricing = () => {
@@ -14,9 +15,21 @@ const Pricing = () => {
             alt=""
           />
           <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-            <img src={stars} className="w-full " width={950} height={400} alt="" />
+            <img
+              src={stars}
+              className="w-full "
+              width={950}
+              height={400}
+              alt=""
+            />
           </div>
         </div>
+       
+          <Heading
+            tag="Get started with Brainwave"
+            title="Pay once, use forever"
+          />
+       
       </div>
     </Section>
   );
