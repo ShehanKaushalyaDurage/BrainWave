@@ -1,3 +1,4 @@
+import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
 
@@ -33,9 +34,21 @@ const PricingList = () => {
         >
           {item.price ? "Get started" : "Contact us"}
         </Button>
-        </div>
-      ))}
-    </div>
+
+        <ul>
+          {item.features.map((feature, index) => (
+            <li
+              key={index}
+              className="flex items-start py-5 border-t border-n-6"
+            >
+              <img src={check} width={24} height={24} alt="Check" />
+              <p className="body-2 ml-4">{feature}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
   );
 };
 
