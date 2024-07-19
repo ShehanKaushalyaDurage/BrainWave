@@ -1,4 +1,4 @@
-import { check, service1, service2 } from "../assets";
+import { check, service1, service2, service3 } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import Generating from "./Generating";
 import Heading from "./Heading";
@@ -86,14 +86,20 @@ const Services = () => {
                       }`}
                     >
                       <div className={index === 2 ? 'flex items-center justify-center h-full w-full bg-n-7 rounded-[1rem]' :""}>
-                        <img src={item} alt="" />
+                        <img src={item} alt={item} width={24} height={24}/>
                       </div>
                     </li>
                   ))}
                 </ul>
               </div>
+              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]" >
+                  <img src={service3} className="w-full h-full object-cover " width={520} height={400} alt="robot" />
+                  <VideoChatMessage/>
+                  <VideoBar/>
+              </div>
             </div>
           </div>
+          <Gradient/>
         </div>
       </div>
     </Section>
