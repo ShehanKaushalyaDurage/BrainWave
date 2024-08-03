@@ -1,7 +1,8 @@
-import { grid } from "../assets";
+import { check2, grid, loading1 } from "../assets";
 import { roadmap } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
+import TagLine from "./Tagline";
 
 const Roadmap = () => {
   return (
@@ -25,8 +26,24 @@ const Roadmap = () => {
                     />
                   </div>
                   <div className="relative z-1">
-                    <div>
-                        
+                    <div className="flex items-center justify-between">
+                      <TagLine>{item.date}</TagLine>
+                      <div>
+                        <img
+                          src={item.status === "done" ? check2 : loading1}
+                          width={16}
+                          height={16}
+                          alt={status}
+                        />
+                        <div className="tagline">{status}</div>
+                      </div>
+                      <div className="mb-10 ">
+                        <img src={item.imageUrl} 
+                        className="w-full"
+                        width={630}
+                        height={420}
+                        alt={item.title} />
+                      </div>
                     </div>
                   </div>
                 </div>
