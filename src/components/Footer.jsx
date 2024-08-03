@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Section from "./Section";
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <Section crosses className="!px-0 !py-10">
+      <div className="container flex ">
 
-export default Footer
+      </div>
+    </Section>
+  );
+};
+
+export default Footer;
